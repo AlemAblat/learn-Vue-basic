@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vue Js</title>
+    <!-- 引入开发版本VueJs框架 -->
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        {{ msg }}
+    </div>
+    <!--创建script标签 -->
+    <script type="text/javascript">
+    // 实例化框架
+    var vue = new Vue({
+        //元素属性，用元素的ID来获取
+        el: "#app",
+        //数据属性，数据属性是一个对象
+        data: {
+            // 创建变量msg
+            msg: "Hello World !"
+        }
+
+    })
+    </script>
+</body>
+
+</html>
